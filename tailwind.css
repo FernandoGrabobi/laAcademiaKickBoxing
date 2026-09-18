@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Academia KickBoxing</title>
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="stylesheet" href="css/tailwind.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/fonts.css">
+<style>
+  body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); }
+  .font-display { font-family: var(--font-display); letter-spacing: 0.02em; font-weight: 900; }
+  .bg-brand { background-color: var(--color-primary); }
+  .text-brand { color: var(--color-primary); }
+  .bg-accent { background-color: var(--color-accent); }
+  .text-accent { color: var(--color-accent); }
+  .border-brand { border-color: var(--color-primary); }
+  .hero-bg {
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(216,31,42,0.18), transparent 55%),
+      radial-gradient(ellipse at 80% 30%, rgba(47,156,166,0.15), transparent 55%),
+      var(--color-bg);
+  }
+  .diagonal-stripe {
+    background: repeating-linear-gradient(135deg, var(--color-primary) 0 18px, var(--color-primary-dark) 18px 36px);
+  }
+</style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b" style="background: rgba(10,10,10,0.9); border-color: var(--color-border); backdrop-filter: blur(6px);">
+    <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="img/logo.png" alt="La Academia KickBoxing" class="h-11 w-11 object-contain rounded-md">
+        <span class="font-display text-lg tracking-wide hidden sm:block">LA ACADEMIA <span class="text-brand">KICK BOXING</span></span>
+      </a>
+      <nav class="flex items-center gap-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-brand transition-colors">Inicio</a>
+        <a href="peleadores/index.html" class="hover:text-brand transition-colors">Peleadores</a>
+        <a href="#contacto" class="hover:text-brand transition-colors hidden sm:block">Contacto</a>
+        <a href="peleadores/index.html" class="bg-brand hover:brightness-110 transition text-white px-4 py-2 rounded-md">Ver peleadores</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-20 pb-24 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <p class="text-accent font-bold tracking-widest text-sm mb-3">K1 · LOW KICK · FULL CONTACT</p>
+        <h1 class="font-display text-5xl sm:text-6xl leading-[0.95] mb-6">
+          LA ACADEMIA<br><span class="text-brand">KICK BOXING</span>
+        </h1>
+        <p class="text-lg max-w-md mb-8" style="color: var(--color-text-muted);">
+          Formamos peleadores en todas las modalidades del kickboxing. Conocé a nuestro plantel, sus récords y en qué filial entrena cada uno.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="peleadores/index.html" class="bg-brand hover:brightness-110 transition text-white px-6 py-3 rounded-md font-bold text-center">
+            Ver peleadores
+          </a>
+          <a href="#contacto" class="border-2 border-brand text-white px-6 py-3 rounded-md font-bold text-center hover:bg-brand transition">
+            Sumate a la academia
+          </a>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <div class="rounded-2xl overflow-hidden shadow-2xl" style="border: 2px solid var(--color-border);">
+          <img src="img/logo.png" alt="La Academia KickBoxing" class="w-72 sm:w-96 object-contain bg-black p-6">
+        </div>
+      </div>
+    </div>
+    <div class="diagonal-stripe h-2 w-full"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="max-w-6xl mx-auto px-5 py-14 grid grid-cols-2 md:grid-cols-4 gap-6 text-center" id="stats">
+    <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+      <p class="font-display text-4xl text-brand" id="stat-peleadores">--</p>
+      <p class="text-sm mt-1" style="color: var(--color-text-muted);">Peleadores</p>
+    </div>
+    <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+      <p class="font-display text-4xl text-accent" id="stat-filiales">--</p>
+      <p class="text-sm mt-1" style="color: var(--color-text-muted);">Filiales</p>
+    </div>
+    <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+      <p class="font-display text-4xl text-brand" id="stat-peleas">--</p>
+      <p class="text-sm mt-1" style="color: var(--color-text-muted);">Peleas disputadas</p>
+    </div>
+    <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+      <p class="font-display text-4xl text-accent" id="stat-modalidades">3</p>
+      <p class="text-sm mt-1" style="color: var(--color-text-muted);">Modalidades</p>
+    </div>
+  </section>
+
+  <!-- MODALIDADES -->
+  <section class="max-w-6xl mx-auto px-5 py-14">
+    <h2 class="font-display text-3xl mb-8">MODALIDADES</h2>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+        <h3 class="font-display text-xl text-brand mb-2">K1</h3>
+        <p class="text-sm" style="color: var(--color-text-muted);">Golpes de puño, patadas y rodillazos. La modalidad más completa del kickboxing.</p>
+      </div>
+      <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+        <h3 class="font-display text-xl text-accent mb-2">Low Kick</h3>
+        <p class="text-sm" style="color: var(--color-text-muted);">Se suman las patadas a la pierna, dándole otro ritmo y estrategia al combate.</p>
+      </div>
+      <div class="rounded-xl p-6" style="background: var(--color-bg-alt); border: 1px solid var(--color-border);">
+        <h3 class="font-display text-xl text-brand mb-2">Full Contact</h3>
+        <p class="text-sm" style="color: var(--color-text-muted);">Golpes de puño y patadas por encima de la cintura, con contacto pleno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-6xl mx-auto px-5 py-16">
+    <div class="rounded-2xl p-10 text-center" style="background: linear-gradient(120deg, var(--color-primary-dark), var(--color-accent-dark, #1f6f77));">
+      <h2 class="font-display text-3xl sm:text-4xl mb-4">CONOCÉ A NUESTRO PLANTEL</h2>
+      <p class="mb-6 max-w-xl mx-auto" style="color: rgba(245,245,245,0.9);">Buscá por modalidad, peso, edad y filial y descubrí el récord de cada peleador de La Academia.</p>
+      <a href="peleadores/index.html" class="inline-block bg-white text-black px-8 py-3 rounded-md font-bold hover:opacity-90 transition">
+        Ver peleadores
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto" class="border-t mt-10" style="border-color: var(--color-border);">
+    <div class="max-w-6xl mx-auto px-5 py-10 grid sm:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <img src="img/logo.png" alt="Logo" class="h-8 w-8 object-contain rounded">
+          <span class="font-display">LA ACADEMIA KICK BOXING</span>
+        </div>
+        <p style="color: var(--color-text-muted);">Prof. Diego H. Pereyra</p>
+      </div>
+      <div>
+        <p class="font-bold mb-2">Filiales</p>
+        <ul style="color: var(--color-text-muted);" class="space-y-1">
+          <li>Villa Mercedes</li>
+          <li>San Luis Capital</li>
+          <li>Merlo</li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold mb-2">Contacto</p>
+        <p style="color: var(--color-text-muted);">Escribinos por WhatsApp o Instagram para sumarte a la academia.</p>
+      </div>
+    </div>
+    <p class="text-center text-xs pb-6" style="color: var(--color-text-dim);">© <span id="year"></span> La Academia KickBoxing</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    cargarPeleadores().then(peleadores => {
+      const filiales = new Set(peleadores.map(p => p.filial));
+      const totalPeleas = peleadores.reduce((acc, p) => acc + p.peleasGanadas + p.peleasPerdidas, 0);
+      document.getElementById('stat-peleadores').textContent = peleadores.length;
+      document.getElementById('stat-filiales').textContent = filiales.size;
+      document.getElementById('stat-peleas').textContent = totalPeleas;
+    });
+  </script>
+</body>
+</html>
