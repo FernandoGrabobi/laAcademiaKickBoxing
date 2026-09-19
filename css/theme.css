@@ -1,0 +1,29 @@
+/* =========================================================
+   La Academia KickBoxing — Paleta de marca
+   Tomada de la referencia de colores de la academia (rojo,
+   negro y celeste/petróleo). Falta el logo definitivo — hoy
+   se usa un placeholder en /img/logo.png. Cuando llegue el
+   logo real, solo hay que reemplazar ese archivo.
+   ========================================================= */
+
+:root {
+  --color-bg: #0a0a0a;          /* negro de fondo principal */
+  --color-bg-alt: #151515;      /* fondo de tarjetas/secciones */
+  --color-bg-alt-2: #1f1f1f;    /* fondo de inputs/hover */
+  --color-border: #2c2c2c;
+
+  --color-primary: #d81f2a;     /* rojo de marca (guantes / "KICK BOXING") */
+  --color-primary-dark: #9e151d;
+  --color-primary-light: #f04553;
+
+  --color-accent: #2f9ca6;      /* celeste/petróleo del personaje y del texto "PROF." */
+  --color-accent-dark: #1f6f77;
+  --color-accent-light: #4fc1cc;
+
+  --color-text: #f5f5f5;
+  --color-text-muted: #a1a1aa;
+  --color-text-dim: #71717a;
+
+  --color-success: #22c55e;
+  --color-danger: #ef4444;
+}
